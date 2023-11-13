@@ -1,0 +1,9 @@
+- install python3: sudo apt install python-is-python3 pip
+- install ansible: python3 -m pip install --user ansible
+- edit manually all: sudo nano /etc/ansible/hosts
+- ping all: ansible all -m ping
+- generate key: ssh-keygen
+- copy key on remote host: ssh-copy-id <user remote>@X.X.X.X
+- test if successfully copied: ssh <user remote>@X.X.X.X
+- Ping everyone: ansible all -m ping -i inventory.yaml
+- basic command: ansible-playbook -i inventory.yaml playbook.yaml
